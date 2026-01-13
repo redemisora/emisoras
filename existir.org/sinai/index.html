@@ -62,7 +62,7 @@
       status.textContent = "Conectando…";
 
       reader = new MediaMTXWebRTCReader({
-        url: "sinai_radio/whep",
+        url: "/sinai_radio/whep",
         onError: (err) => {
           status.textContent = "Error: " + err;
           status.className = "status error";
