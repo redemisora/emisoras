@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Urnas de Fuego — en tiempo real</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      color: #eee;
+      font-family: Arial, sans-serif;
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+    }
+    .player-box {
+      max-width: 600px;
+      width: 100%;
+      background: #1c1c1c;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    }
+    h1 {
+      font-size: 20px;
+      margin-bottom: 12px;
+      text-align: center;
+      color: #4cc9f0;
+    }
+    audio, video {
+      width: 100%;
+      border-radius: 8px;
+      outline: none;
+    }
+    .status {
+      margin-top: 12px;
+      text-align: center;
+      font-size: 14px;
+      color: #aaa;
+    }
+    .error { color: #ff6b6b; }
+    .ok { color: #00d4a6; }
+  </style>
+</head>
+<body>
+  <div class="player-box">
+    <h1>Sinai Radio</h1>
+    <audio id="player" controls autoplay playsinline></audio>
+    <div class="status" id="status">Conectando…</div>
+  </div>
+
+  <!-- Asegúrate de que reader.js esté disponible en la misma carpeta -->
+  <script src="../reader.js"></script>
+  <script>
+    const player = document.getElementById('player');
+    const status = document.getElementById('status');
+    let reader = null;
+
+    function connect() {
+      if (reader) reader.close();
+      status.textContent = "Conectando…";
+
+      reader = new MediaMTXWebRTCReader({
+        url: window.location.origin + "/urnasdefuego_radio/whep",
+        onError: (err) => {
+          status.textContent = "Error: " + err;
+          status.className = "status error";
+        },
+        onTrack: (evt) => {
+          status.textContent = "Conectado";
+          status.className = "status ok";
+          player.srcObject = evt.streams[0];
+        },
+      });
+    }
+
+    window.addEventListener('load', connect);
+    window.addEventListener('beforeunload', () => { if (reader) reader.close(); });
+  </script>
+</body>
+</html>
