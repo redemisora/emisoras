@@ -1,0 +1,50 @@
+{
+  "background_color": "#a7c9f5",
+  "description": "Radio MECAM La Capilla Cutervo, transmitimos música, saludos, celebramos cumpleaños, matrimonios, aniversarios; Ofrecemos espacios publicitarios",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Radio MECAM",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Radio MECAM",
+  "start_url": "/",
+  "theme_color": "#e4ebf8",
+  "icons": [
+    {
+      "src": "https://www.radiomecam.com/favicon.ico",
+      "type": "image/x-icon",
+      "isSquare": false,
+      "isPng": false,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 0,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": false
+    },
+    {
+      "src": "https://www.radiomecam.com/favicon.ico",
+      "type": "image/x-icon",
+      "isSquare": false,
+      "isPng": false,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 0,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": false
+    }
+  ],
+  "id": "com.radiomecam.radiomecam",
+  "categories": [
+    "entertainment",
+    "music",
+    "news"
+  ],
+  "iarc_rating_id": "36a6fd7c-1ebe-8222-8d70-3efc29347e80",
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 480
+  },
+  "lang": "es"
+}
