@@ -28,6 +28,11 @@
       "src": "LargeTile.scale-100.png",
       "sizes": "310x310",
       "type": "image/png"
+    },
+    {
+      "src": "launchericon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
   "id": "com.radiomecam.radiomecam",
