@@ -6,7 +6,7 @@
   "name": "Radio MECAM",
   "orientation": "any",
   "short_name": "Radio MECAM",
-  "start_url": "https://www.radiomecam.com/",
+  "start_url": "https://www.radiomecam.com",
   "theme_color": "#e4ebf8",
   "icons": [
     {
