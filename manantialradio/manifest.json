@@ -3,9 +3,9 @@
   "description": "Radio Manantial Cutervo, tu fuente de fe y esperanza. 24 horas con el mejor mensaje cristiano: música de alabanza y adoración, estudios y mensajes que edifican tu vida.",
   "dir": "ltr",
   "display": "standalone",
-  "name": "MANANTIAL Radio",
+  "name": "Manantial radio",
   "orientation": "any",
-  "short_name": "Radio Manantial",
+  "short_name": "Manantial radio",
   "start_url": "https://www.manantialradio.com",
   "theme_color": "#a8ddf2",
   "icons": [
