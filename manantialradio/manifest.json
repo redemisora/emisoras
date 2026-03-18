@@ -5,7 +5,7 @@
   "display": "standalone",
   "name": "MANANTIAL Radio",
   "orientation": "any",
-  "short_name": "Radio Manantial Cutervo",
+  "short_name": "Radio Manantial",
   "start_url": "https://www.manantialradio.com",
   "theme_color": "#a8ddf2",
   "icons": [
