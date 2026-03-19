@@ -42,9 +42,5 @@
     "news"
   ],
   "iarc_rating_id": "525ff778-13f6-4e04-a120-7181b07e5fb9",
-  "lang": "es",
-  "prefer_related_applications": false,
-  "edge_side_panel": {
-    "preferred_width": 480
-  }
+  "lang": "es"
 }
